@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { StarIcon } from './icons';
 
@@ -13,12 +12,12 @@ const Testimonials: React.FC = () => {
     <section id="testimonials" className="py-20 bg-gray-800">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-white">What Our Customers Say</h2>
+          <h2 className="text-5xl font-heading text-white tracking-wider">What Our Customers Say</h2>
           <div className="mt-4 w-24 h-1 bg-amber-500 mx-auto rounded"></div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {testimonials.map((testimonial) => (
-            <div key={testimonial.name} className="bg-gray-900 p-8 rounded-lg shadow-lg flex flex-col transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl">
+            <div key={testimonial.name} className="bg-gray-900 p-8 rounded-lg shadow-lg flex flex-col transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl hover:shadow-amber-500/10">
               <div className="flex text-amber-400 mb-4">
                 {[...Array(5)].map((_, i) => <StarIcon key={i} className="h-5 w-5" />)}
               </div>

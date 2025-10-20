@@ -1,19 +1,54 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
-    <meta charset="UTF-g" />
+    <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>High Limits</title>
+    <title>High Limits - Elevate Your Experience</title>
+    <meta name="description" content="High Limits Smoke Shop – Elevate your experience with premium glassware, vapes, CBD, and accessories at locations across Texas." />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              heading: ['Bebas Neue', 'sans-serif'],
+              body: ['Inter', 'sans-serif'],
+            },
+            animation: {
+              'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+              'pulse-glow': 'pulseGlow 2.5s infinite ease-in-out',
+            },
+            keyframes: {
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              pulseGlow: {
+                '0%, 100%': {
+                  boxShadow: '0 0 15px rgba(251, 191, 36, 0.4), 0 0 25px rgba(251, 191, 36, 0.2)',
+                },
+                '50%': {
+                  boxShadow: '0 0 30px rgba(251, 191, 36, 0.6), 0 0 45px rgba(251, 191, 36, 0.4)',
+                },
+              },
+            }
+          }
+        }
+      }
+    </script>
     <style>
       /* Custom scrollbar for a better aesthetic */
       ::-webkit-scrollbar {
         width: 8px;
       }
       ::-webkit-scrollbar-track {
-        background: #1f2937; /* bg-gray-800 */
+        background: #111827; /* bg-gray-900 */
       }
       ::-webkit-scrollbar-thumb {
         background: #4b5563; /* bg-gray-600 */
@@ -22,18 +57,30 @@
       ::-webkit-scrollbar-thumb:hover {
         background: #6b7280; /* bg-gray-500 */
       }
+      .fade-in-section {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+      }
+      .fade-in-section.is-visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
     </style>
   <script type="importmap">
 {
   "imports": {
     "react": "https://aistudiocdn.com/react@^19.2.0",
     "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
-    "react/": "https://aistudiocdn.com/react@^19.2.0/"
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react-tsparticles": "https://aistudiocdn.com/react-tsparticles@^2.12.2",
+    "tsparticles-slim": "https://aistudiocdn.com/tsparticles-slim@^2.12.0",
+    "tsparticles-engine": "https://aistudiocdn.com/tsparticles-engine@^2.12.0"
   }
 }
 </script>
 </head>
-  <body class="bg-gray-900">
+  <body class="bg-gray-900 font-body">
     <div id="root"></div>
     <script type="module" src="/index.tsx"></script>
   </body>

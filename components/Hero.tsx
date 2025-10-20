@@ -1,10 +1,9 @@
-
 import React from 'react';
 
 const Hero: React.FC = () => {
   return (
-    <section id="home" className="relative h-[60vh] min-h-[400px] flex items-center justify-center text-center text-white overflow-hidden">
-      <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
+    <section id="home" className="relative h-screen min-h-[600px] flex items-center justify-center text-center text-white overflow-hidden">
+      <div className="absolute inset-0 bg-black opacity-60 z-10"></div>
       <video
         autoPlay
         loop
@@ -16,15 +15,18 @@ const Hero: React.FC = () => {
         Your browser does not support the video tag.
       </video>
       <div className="relative z-20 p-6">
-        <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight drop-shadow-lg">
+        <h1 className="text-6xl md:text-8xl font-heading tracking-wider drop-shadow-lg animate-fade-in-up">
           Elevate Your Experience
         </h1>
-        <p className="mt-4 text-lg md:text-xl max-w-2xl mx-auto text-gray-300 drop-shadow-md">
+        <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-gray-300 drop-shadow-md animate-fade-in-up [animation-delay:0.3s]">
+          Explore quality. Discover community. Elevate your vibe.
+        </p>
+        <p className="mt-2 text-lg md:text-xl max-w-2xl mx-auto text-gray-300 drop-shadow-md animate-fade-in-up [animation-delay:0.5s]">
           Your premier destination for quality smoke and vape products. Discover our locations and find your new favorite spot.
         </p>
         <a 
           href="#locations"
-          className="mt-8 inline-block bg-amber-500 text-gray-900 font-bold py-3 px-8 rounded-full text-lg hover:bg-amber-400 transition-transform transform hover:scale-105 duration-300 shadow-xl"
+          className="mt-8 inline-block bg-amber-500 text-gray-900 font-bold py-3 px-8 rounded-full text-lg transition-all duration-300 shadow-xl hover:bg-amber-400 hover:scale-105 hover:shadow-2xl hover:shadow-amber-500/40 animate-fade-in-up [animation-delay:0.7s] animate-pulse-glow"
         >
           Find a Shop
         </a>
