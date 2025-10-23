@@ -25,43 +25,58 @@ const Hero: React.FC = () => {
           SmokeLab, SmokeBox, BlazyVape, 5-Star, HighLimits.
         </p>
 
-<div className="mt-8 flex flex-wrap justify-center items-center gap-6 animate-fade-in-up [animation-delay:0.8s]">
-  <img
-    src="https://media-assets.pcnaid.com/Smoke%20Lab%20Smoke%20Shop%20Logo-art.png"
-    alt="Smoke Lab"
-    className="h-[80px] sm:h-[90px] md:h-[100px] w-auto object-contain brand-logo"
-    decoding="async"
-    loading="lazy"
-  />
-  <img
-    src="https://media-assets.pcnaid.com/Smoke%20Box%20Smoke%20Shop%20Logo-art.png"
-    alt="Smoke Box"
-    className="h-[80px] sm:h-[90px] md:h-[100px] w-auto object-contain brand-logo"
-    decoding="async"
-    loading="lazy"
-  />
-  <img
-    src="https://media-assets.pcnaid.com/High%20Limits%20Smoke%20Shop%20Logo-art.png"
-    alt="High Limits Smoke Shop"
-    className="h-[80px] sm:h-[90px] md:h-[100px] w-auto object-contain brand-logo"
-    decoding="async"
-    loading="lazy"
-  />
-  <img
-    src="https://media-assets.pcnaid.com/Blazy%20Vape%20Shop%20Logo-art.png"
-    alt="Blazy Vape"
-    className="h-[80px] sm:h-[90px] md:h-[100px] w-auto object-contain brand-logo"
-    decoding="async"
-    loading="lazy"
-  />
-  <img
-    src="https://media-assets.pcnaid.com/5-Star%20Smoke%20Shop%20Logo-art.png"
-    alt="5 Star Smoke Shop & CBD"
-    className="h-[80px] sm:h-[90px] md:h-[100px] w-auto object-contain brand-logo"
-    decoding="async"
-    loading="lazy"
-  />
+<div className="mt-10 brand-row animate-fade-in-up [animation-delay:0.8s]" aria-label="Our Brands">
+  <div className="brand-tile glow--smokelab">
+    <img
+      src="https://media-assets.pcnaid.com/Smoke%20Lab%20Smoke%20Shop%20Logo-art.png"
+      alt="Smoke Lab"
+      width={1600} height={750}
+      className="brand-img"
+      decoding="async" loading="eager"
+    />
+  </div>
+
+  <div className="brand-tile glow--smokebox">
+    <img
+      src="https://media-assets.pcnaid.com/Smoke%20Box%20Smoke%20Shop%20Logo-art.png"
+      alt="Smoke Box"
+      width={1600} height={750}
+      className="brand-img"
+      decoding="async" loading="lazy"
+    />
+  </div>
+
+  <div className="brand-tile glow--highlimits">
+    <img
+      src="https://media-assets.pcnaid.com/High%20Limits%20Smoke%20Shop%20Logo-art.png"
+      alt="High Limits Smoke Shop"
+      width={1600} height={750}
+      className="brand-img"
+      decoding="async" loading="lazy"
+    />
+  </div>
+
+  <div className="brand-tile glow--blazy">
+    <img
+      src="https://media-assets.pcnaid.com/Blazy%20Vape%20Shop%20Logo-art.png"
+      alt="Blazy Vape"
+      width={1600} height={750}
+      className="brand-img"
+      decoding="async" loading="lazy"
+    />
+  </div>
+
+  <div className="brand-tile glow--fivestar">
+    <img
+      src="https://media-assets.pcnaid.com/5-Star%20Smoke%20Shop%20Logo-art.png"
+      alt="5 Star Smoke Shop & CBD"
+      width={1600} height={750}
+      className="brand-img"
+      decoding="async" loading="lazy"
+    />
+  </div>
 </div>
+
 
         
         <a 
