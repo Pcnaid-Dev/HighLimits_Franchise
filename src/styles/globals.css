@@ -1,6 +1,15 @@
 .brand-logo {
   transition: transform 0.2s ease;
 }
+
+@layer utilities {
+  .brand-logo {
+    @apply transition-transform duration-200 hover:scale-105;
+  }
+}
+
 .brand-logo:hover {
   transform: scale(1.05);
+  @apply transition-transform duration-200 hover:scale-105;
+  }
 }
