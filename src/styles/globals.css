@@ -11,3 +11,52 @@
     @apply transition-transform duration-200 hover:scale-105;
   }
 }
+
+/* ---- Brand row / tiles ---- */
+@layer components {
+  /* row wrapper */
+  .brand-row {
+    @apply flex flex-wrap justify-center items-center gap-8 md:gap-12 lg:gap-16;
+  }
+
+  /* fixed-height tile ensures perfect middle-axis alignment */
+  .brand-tile {
+    @apply relative isolate flex items-center justify-center;
+    height: 110px;          /* base size */
+  }
+  @screen md { .brand-tile { height: 130px; } }
+  @screen lg { .brand-tile { height: 150px; } }
+
+  /* the image fills the tile’s height; aspect preserved */
+  .brand-img {
+    @apply relative z-10 h-full w-auto object-contain transition-transform duration-200;
+    filter: drop-shadow(0 1px 0 rgba(255,255,255,.06));
+    will-change: transform, filter;
+  }
+  .brand-img:hover { @apply scale-105; }
+}
+
+/* ---- Neon haze (gradient glow) using CSS vars ---- */
+.brand-tile::before {
+  content: "";
+  position: absolute;
+  inset: -14px;                /* extends glow beyond edges */
+  border-radius: 9999px;
+  z-index: 0;
+  /* layered radial gradients; c3 is optional */
+  background:
+    radial-gradient(40% 55% at 50% 55%, var(--c1) 0 48%, transparent 62%),
+    radial-gradient(70% 85% at 55% 45%, var(--c2) 0 46%, transparent 72%),
+    radial-gradient(85% 95% at 45% 60%, var(--c3, transparent) 0 40%, transparent 78%);
+  filter: blur(18px);
+  opacity: .70;
+  pointer-events: none;
+}
+
+/* Brand palettes (hex mapped directly; your rgba values work too) */
+.glow--smokebox  { --c1: #436937; --c2: #929398; }
+.glow--blazy     { --c1: #1ee22e; --c2: #fb4404; --c3: #eefdfd; }
+.glow--smokelab  { --c1: #1bfe0c; --c2: #fefeff; --c3: #fb0c0c; }
+.glow--fivestar  { --c1: #ec7e7b; --c2: #86b5f9; --c3: #ffffff; }
+.glow--highlimits{ --c1: #ec0525; --c2: #ffffff; --c3: #000000; }
+
