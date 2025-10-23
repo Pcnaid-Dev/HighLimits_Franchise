@@ -1,15 +1,13 @@
-.brand-logo {
-  transition: transform 0.2s ease;
-}
+/* src/styles/globals.css */
 
+/* If you’re using Tailwind, keep these three lines */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Your tiny utility for brand logos */
 @layer utilities {
   .brand-logo {
     @apply transition-transform duration-200 hover:scale-105;
-  }
-}
-
-.brand-logo:hover {
-  transform: scale(1.05);
-  @apply transition-transform duration-200 hover:scale-105;
   }
 }
