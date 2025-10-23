@@ -22,7 +22,7 @@ const Hero: React.FC = () => {
           Explore our family of brands — bringing you quality, community, and style.
         </p>
         <p className="mt-2 text-lg md:text-xl max-w-2xl mx-auto text-gray-300 drop-shadow-md animate-fade-in-up [animation-delay:0.5s]">
-          SmokeLab SmokeShop, SmokeBox SmokeShop, Blazy Vape Shop, 5 Star SmokeShop, High Limits SmokeShop.
+          SmokeLab, SmokeBox, BlazyVape, 5-Star, HighLimits.
         </p>
         <a 
           href="#locations"
