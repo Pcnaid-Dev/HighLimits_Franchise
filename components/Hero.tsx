@@ -19,10 +19,10 @@ const Hero: React.FC = () => {
           Elevate Your Experience
         </h1>
         <p className="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-gray-300 drop-shadow-md animate-fade-in-up [animation-delay:0.3s]">
-          Explore quality. Discover community. Elevate your vibe.
+          Explore our family of brands — bringing you quality, community, and style.
         </p>
         <p className="mt-2 text-lg md:text-xl max-w-2xl mx-auto text-gray-300 drop-shadow-md animate-fade-in-up [animation-delay:0.5s]">
-          Your premier destination for quality smoke and vape products. Discover our locations and find your new favorite spot.
+          SmokeLab SmokeShop, SmokeBox SmokeShop, Blazy Vape Shop, 5 Star SmokeShop, High Limits SmokeShop.
         </p>
         <a 
           href="#locations"
