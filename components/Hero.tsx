@@ -30,30 +30,35 @@ const Hero: React.FC = () => {
     src="https://media-assets.pcnaid.com/Smoke%20Lab%20Smoke%20Shop%20Logo-art.png"
     alt="Smoke Lab"
     className="h-[80px] sm:h-[90px] md:h-[100px] w-auto object-contain brand-logo"
+    decoding="async"
     loading="lazy"
   />
   <img
     src="https://media-assets.pcnaid.com/Smoke%20Box%20Smoke%20Shop%20Logo-art.png"
     alt="Smoke Box"
     className="h-[80px] sm:h-[90px] md:h-[100px] w-auto object-contain brand-logo"
+    decoding="async"
     loading="lazy"
   />
   <img
     src="https://media-assets.pcnaid.com/High%20Limits%20Smoke%20Shop%20Logo-art.png"
     alt="High Limits Smoke Shop"
     className="h-[80px] sm:h-[90px] md:h-[100px] w-auto object-contain brand-logo"
+    decoding="async"
     loading="lazy"
   />
   <img
     src="https://media-assets.pcnaid.com/Blazy%20Vape%20Shop%20Logo-art.png"
     alt="Blazy Vape"
     className="h-[80px] sm:h-[90px] md:h-[100px] w-auto object-contain brand-logo"
+    decoding="async"
     loading="lazy"
   />
   <img
     src="https://media-assets.pcnaid.com/5-Star%20Smoke%20Shop%20Logo-art.png"
     alt="5 Star Smoke Shop & CBD"
     className="h-[80px] sm:h-[90px] md:h-[100px] w-auto object-contain brand-logo"
+    decoding="async"
     loading="lazy"
   />
 </div>
