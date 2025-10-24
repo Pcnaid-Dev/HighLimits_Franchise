@@ -3,11 +3,11 @@ import React from "react";
 
 const BRANDS = [
   // TODO: swap these src values to your real assets (SVG/PNG) in /public or CDN
-  { name: "SmokeLab",  src: "/brands/smokelab.svg"  },
-  { name: "SmokeBox",  src: "/brands/smokebox.svg"  },
-  { name: "BlazyVape", src: "/brands/blazyvape.svg" },
-  { name: "5-Star",    src: "/brands/5star.svg"     },
-  { name: "HighLimits",src: "/brands/highlimits.svg"},
+  { name: "SmokeLab",  src: "https://media-assets.pcnaid.com/Smoke%20Lab%20Smoke%20Shop%20Logo-art.png"  },
+  { name: "SmokeBox",  src: "https://media-assets.pcnaid.com/Smoke%20Box%20Smoke%20Shop%20Logo-art.png"  },
+  { name: "BlazyVape", src: "https://media-assets.pcnaid.com/Blazy%20Vape%20Shop%20Logo-art.png" },
+  { name: "5-Star",    src: "https://media-assets.pcnaid.com/5-Star%20Smoke%20Shop%20Logo-art.png"     },
+  { name: "HighLimits",src: "https://media-assets.pcnaid.com/High%20Limits%20Smoke%20Shop%20Logo-art.png"},
 ];
 
 const Hero: React.FC = () => {
